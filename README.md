@@ -25,6 +25,11 @@ Mac <command><string>/Applications/Calculator.app/Contents/MacOS/Calculator</str
 
 https://secfree.com/article-333.html
 
+##  CentOs 7 安装 Nc
+```
+rpm -ivh netcat-1.10-891.2.x86_64.rpm
+```
+
 ## 选项
 
 ```
@@ -44,10 +49,14 @@ nc 192.168.199.246 6666
 
 ![exploit](https://github.com/iBearcat/S2-052/blob/master/exploit.jpg?raw=true)
 
+## 修复方案
 
+1.建议尽快升级到 2.5.13版本。
 
-##  CentOs 7 安装 Nc
+2.在不使用时删除 Struts REST插件，或仅限于服务器普通页面和JSONs：
+
 ```
-rpm -ivh netcat-1.10-891.2.x86_64.rpm
+<constant name=”struts.action.extension” value=”xhtml,,json” />
 ```
 
+3.限制服务器端扩展类型，删除XML支持。
