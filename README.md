@@ -11,6 +11,8 @@
 
 ## Usage
 
-`java -jar CVE-2017-9805-Exploit.jar http://192.168.199.246:8080/struts2-rest-showcase/orders.xhtml "command"`
+```
+java -jar CVE-2017-9805-Exploit.jar http://192.168.199.246:8080/struts2-rest-showcase/orders.xhtml "command"
+```
 
 ![exploit](https://github.com/iBearcat/S2-052/blob/master/exploit.jpg?raw=true)
