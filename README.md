@@ -32,3 +32,9 @@ Windows <command><string>calc</string></command>
 
 Mac <command><string>/Applications/Calculator.app/Contents/MacOS/Calculator</string></command>
 ```
+
+##  CentOS7 Install Nc
+```
+rpm -ivh netcat-1.10-891.2.x86_64.rpm
+```
+
