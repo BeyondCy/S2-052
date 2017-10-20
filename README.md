@@ -28,5 +28,7 @@ Content-Type: application/xml
 </entry>
 </map>
 
+Windows <command><string>calc</string></command>
+
 Mac <command><string>/Applications/Calculator.app/Contents/MacOS/Calculator</string></command>
 ```
