@@ -1,4 +1,4 @@
-# S2-052
+# S2-052 Exploit For Nc
 
 CVE-2017-9805 - Exploit
 
