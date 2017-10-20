@@ -1,8 +1,6 @@
-# S2-052 Exploit For Nc
+# CVE-2017-9805 （S2-052） Exploit For Nc
 
-CVE-2017-9805 - Exploit
-
-Options
+##Options
 
 ```
  [*] Apache Struts2 CVE-2017-9805 (S2-052) - Exploit
